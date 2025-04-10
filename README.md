@@ -113,3 +113,12 @@ Both the client and server use `.env` files to store sensitive information:
 1. Install dependencies in both `client` and `server` directories:
    ```sh
    npm install
+
+
+
+## Issue right now
+1.  **Check API Keys and Permissions:** Make sure the API keys you are using have the necessary permissions to create posts.
+2.  **Authentication:** Ensure that the authentication process is correctly implemented.
+3.  **Rate Limits:** Be mindful of the rate limits imposed by the Twitter API. If you exceed these limits, you might encounter errors.
+4.  **Correct API Endpoint:** Verify that you are using the correct API endpoint for creating posts.
+5.  **Check Your Code:** Review your code to ensure that all parameters are correctly formatted and passed to the API.
