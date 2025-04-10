@@ -96,8 +96,9 @@ mcpClient.connect(new SSEClientTransport(new URL(`http://localhost:3001/sse`)))
         })
         const functionCall = response.candidates[ 0 ].content.parts[ 0 ].functionCall
         const responseText = response.candidates[ 0 ].content.parts[ 0 ].text
-    
+        
         if (functionCall) {
+            console.log('lala',functionCall)
             return chatLoop(functionCall)
         }
     
