@@ -21,12 +21,14 @@ server.tool(
     },
     async (data) => {
         const { a, b } = data;
-        return [
-            { 
-                type: "text", 
-                text: `The sum of ${a} and ${b} is ${a + b}`
-            }
-        ]
+        return {
+           content: [
+                { 
+                    type: "text", 
+                    text: `The sum of ${a} and ${b} is ${a + b}`
+                }
+            ]
+        }
     }
 
 )

@@ -72,6 +72,7 @@ mcpClient.connect(new SSEClientTransport(new URL(`http://localhost:3001/sse`)))
     
         } else {
             const question = await rl.question('You: ');
+            
             chatHistory.push({
                 role: "user",
                 parts: [
